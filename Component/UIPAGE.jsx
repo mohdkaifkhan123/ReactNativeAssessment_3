@@ -178,7 +178,7 @@ const UIPAGE = () => {
             </View>
             <View>
               <Circle style={styles.Circle} />
-              <Google style={styles.icon} />
+              <Google style={[styles.icon, {marginTop: -32}]} />
             </View>
             <View>
               <Circle style={styles.Circle} />
@@ -327,6 +327,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
   },
   modalContent: {
     backgroundColor: Color.white,
@@ -334,8 +335,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: '70%',
     alignItems: 'center',
-    borderWidth: 4,
-    borderColor: Color.black,
   },
   modalText: {
     fontSize: 18,
